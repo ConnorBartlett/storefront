@@ -1,17 +1,17 @@
 <!--REQUIREMENTS: 
        * A): Must have separate CSS and HTMl files connected through a <link> tag
-        *B): <header>, <nav>, <section>, <a>, <footer>, <article>, <sidebar> 
+        *B): *<header>, *<nav>, *<section>, *<a>, *<footer>, *<article>, *<sidebar> 
         *C): Must make use of at least one CSS pseudo-class ( :hover for example)  
-        D): Must have body content informing the user about the topics listed below
-        E): Links in nav must be able to direct users to the matching topic sections
-        F): Must have at least 3 educational programming links on the site - these links should open in a new tab
-        G): Must make use of at least one AnimateCSS animation
+        *D): Must have body content informing the user about the topics listed below
+        *E): Links in nav must be able to direct users to the matching topic sections
+        *F): Must have at least 3 educational programming links on the site - these links should open in a new tab
+        *G): Must make use of at least one AnimateCSS animation
         
         CONTENT:
         A): You must include and describe at least 3 of the following 5 concepts within your webpage: 
-                - Functions
-                - Objects
-                - Arrays
+                *- Functions
+                *- Objects
+                *- Arrays
                 - For loops
                 - Conditionals
      -->
@@ -19,6 +19,7 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
         <meta charset="UTF-8">
         <meta name="viewport" content = "width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -27,27 +28,93 @@
     </head>
     <body>
         
+        <!-- HEADER -->
+
+
         <section id="header">
             <header>
-                <h1>test</h1>
+                <h1 class="animated bounceInDown">JavaScript Tutorial</h1>
             </header>
         </section>
-        <!-- NAVBAR-->
         
+        
+        <!-- NAVBAR-->
+
+
+    <nav class="navbar">
         <section id="navbar">
+            
                 <ul>
                     <li><a href="">Home</a></li>
-                    <li><a href="">News</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">About</a></li>
+                    <li><a href="#Functions" class="navLink">Functions</a></li>
+                    <li><a href="#Objects" class="navLink">Objects</a></li>
+                    <li><a href="#Arrays" class="navLink">Arrays</a></li>
+                </ul>
+            
+        </section>
+    </nav>
+        <!--SIDEBAR-->
+
+        <section id="sidebar">
+            <nav class="sidebar">
+                <h1>Educational Resorces</h1>
+                <ul>
+                    <li><a href="https://www.w3schools.com/">w3schools.com</a></li>
+                    <br>
+                    <li><a href="https://github.com/">github.com</a></li>
+                    <br>
+                    <li><a href="https://stackoverflow.com/">stackoverflow.com</a></li>
+
                 </ul>
             </nav>
         </section>
 
-        <!-- HEADER -->
+        
 
         <!-- MAIN CONTENT-->
 
+        <section id="Functions">
+            <h1 class="animated bounceInDown delay-1s">Functions</h1>
+                <img src="./projphotos/fun-scrn.jpg">
+                <p>
+                    A function is a program designed to perform a particular task within our code that we can declare for later use.  There are several ways to write functions in Js including fat arrow functions which were introduced in es6.
+
+        </section>
+
+        <br>
+
+        <section id="Objects">
+            <h1 class="animated bounceInDown delay-2s">Objects</h1>
+            <img src="./projphotos/object-scrn.jpg">
+            <p>
+                In JavaScript, almost everything is an object. An object is a datatype that consists of key / value pairs. Objects can contain many values and are used in just about every chunk of code we write.
+            </p>
+        </section>
+
+        <br>
+
+        <section id="Arrays">
+            <h1 class="animated bounceInDown
+         delay-3s">Arrays</h1>
+         <img src="./projphotos/array-scrn.jpg">
+            <p>
+                An Array is an object in JavaScript which stores multiple different values in a single variable. Arrays are a great solution to storing large amounts of information since we are able to loop through them and pull the information we have stored later on.
+            </p>
+        </section>
+
+        <br>
+        <br>
+        <br>
+        <br>
+    
+
         <!-- FOOTER -->
+        <article id=footer>
+            <footer>
+            
+                Made by Connor Bartlett
+            
+            </footer>
+        </article>
     </body>
 </html>
